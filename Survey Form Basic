@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <body>
+ <h1 id="title">The Coffee Survey Form</h1>
+ <p id="description">Let's see how your caffeine habits weigh up against others!
+ </p>
+ <form id="survey-form">
+<fieldset>
+  <label id="name-label" for="name">Enter your name<input id="name" name="name" type="text" placeholder="Enter your name" required></label><br>
+  <label id="email-label" for="email">Email address<input id="email" name="email" type="email" placeholder="Enter your email address" required></label><br>
+  <label id="number-label" for="number">Phone number<input id="number" name="number" type="number" min="07000000000" max="07999999999" placeholder="Enter your Phone Number" required></label><br>
+  <select id="dropdown" name="Continent" class="form control" required>
+    <option disabled selected value>Continent</option>
+    <option value ="Asia">Asia</option>
+    <option value="Europe">Europe</option>
+    <option value="Africa">Africa</option>
+    <option value="North America">North America</option>
+    <option value="South America">South America</option>
+    <option value="Oceania">Oceania</option>
+    <option value="Antartica">Antartica</option></label><br>
+  <label id="coffee-drinker" for="coffee-drinker"> <br>
+    <input name="coffee-drinker"
+    value="yes" 
+    type="radio"> Yes </label>
+    <input name="coffee-drinker"
+    value="no"
+    type="radio"> No</label><br>
+  <input type="checkbox" name="drinkcoffee1" id="drinkcoffee1" value="drinkcoffee1">
+  <label for ="drinkcoffee1">I drink 1-2 coffees a day</label><br>
+  <input type="checkbox"
+  name="drinkcoffee3" id="drinkcoffee3" value="drinkcoffee3">
+  <label for="drinkcoffee3"> I drink 3-4 coffees a day</label><br>
+  <input type="checkbox" name="drinkcoffee5" id="drinkcoffee5" value="drinkcoffee5">
+  <label for="drinkcoffee5"> I drink 5+ coffees a day</label>
+  <textarea id="text"></textarea><br>
+  <button type="submit" id="submit" class="submit">Submit</button>
+  </fieldset>
